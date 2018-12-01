@@ -1,0 +1,33 @@
+<html>
+<head>
+<body>
+<center><p>login</p><center>
+<link rel="stylesheet" href="log.css" />
+<div>
+<center><form action="p2link.html" method="get">
+username &nbsp&nbsp<input type="text" name="txt" value="enter your name here"  height="100px; "width="100px" onfocus="clearv()" id="d1" onfocusout="check()"/><br>
+<div id="error"></div><br>
+password &nbsp&nbsp<input type="text" name="pass" id="d2"  height="100px; "width="100px"/><br><br><br>
+<input type="submit" id="btn" height="100px; "width="100px"onclick="aler("logged in") value="login" style="color:red"/>
+<input type="button" id="btn2" height="100px "value="forget password" width="100px" style="color:red"/>
+
+</form></center></div>
+<script type="text/javascript">
+function clearv(){
+var t=" ";
+document.getElementById("d1").value=t;
+error.innerHTML = "";
+}
+function check(){
+if(document.getElementById("d1").value==""||document.getElementById("d1").value.length<3){
+clearv();
+error.innerHTML = 'Please enter a correct name.';
+onfocus=document.getElementById("d1");
+
+}
+onfocus=document.getElementById("d2");
+
+}
+</script>
+</head>
+</body></html>

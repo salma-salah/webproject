@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>--- jQuery Animate ---</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+   <script type="text/javascript" language="javascript">
+   
+    $(document).ready(function() {
+	
+
+      $("#out").click(function(){
+         $("#more").animate({ 
+			   width: "70%",
+			   opacity: 0.4,
+			   marginLeft: "0.6in",
+			   fontSize: "3em", 
+			   borderWidth: "10px"
+			 }, 2000,"swing"
+			 
+		 );
+      });
+      $("#in").click(function(){
+         $("#more").animate({ 
+           width: "100",
+           opacity: 1.0,
+           marginLeft: "0in",
+           fontSize: "100%", 
+           borderWidth: "1px"
+         }, 2000,'linear');
+      });
+
+   });
+   </script>
+   <style>
+      div {
+           background-color:#bca;
+           width:100px; 
+           border:1px solid green; 
+          }
+  </style>
+</head>
+<body>
+
+  <center> <p>borrowing Details</p><center>
+   <button id="out"> strech</button>
+   <button id="in"> title</button>
+   <div id="more">boworrowing details:<p>every day except friday & sunday.</p>
+   <p>you must bring your borrowing id</p>
+   <p>if you don't have one librarian will make it for you for free</p>
+   <p>you can't take the book more than two weeks</p>
+   <p>for any more info contact us 0125657</p>
+   </div>
+  
+</body>
+</html>
